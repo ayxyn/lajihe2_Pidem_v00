@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* joenlendirici hisse */
+
+
+p {
+    /* font-family: 'Exo', sans-serif; */
+    /* font-size: 32px;
+    font-weight: 700; */
+}
+
+/* Navbar  */
+
+#navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid red;
+}
+
+.nav-left {
+    width: 100px;
+    display: inline-block;
+}
+
+
+
+
+.navTabs {
+    display: inline-block;
+}
+
+.navTab {
+
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.navTab a {
+    font-family: 'Exo', sans-serif;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.navTab a i {
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+
+.tabInner {
+    position: absolute;
+    padding: 10px;
+    z-index: -1;
+    opacity: 0;
+    left: 36px;
+    top: 40px;
+    transition: 0.3s all;
+    background-color: white;
+    min-width: 200px;
+
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+
+.navTab:hover>a {
+    color: crimson;
+}
+
+.navTab:hover .tabInner {
+    z-index: 1;
+    opacity: 1;
+}
+
+.navTab:hover .tabInner .inner {
+    opacity: 1;
+}
+
+.navTab .tabInner li {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.navTab .tabInner li:hover a {
+    color: crimson;
+}
+
+.navTab .tabInner a {
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+
+.navTools {
+    display: inline-block;
+    position: relative;
+}
+
+.navTools a{
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+}
+
+
+.btnCart {
+    margin-left: 0.2rem;
+    display: inline-block;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 36px;
+    transition: 0.3s;
+    padding-right: 5px;
+}
+
+.btnCart i {
+    position: relative;
+    left: -0.5rem;
+}
+
+.btnCart .cartNum {
+    position: absolute;
+    left: 1.5rem;
+    top: -0.2rem;
+    background-color: crimson;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    line-height: 0.9rem;
+}
+
+
+
+/*index intro*/
+#intro {
+    padding-top: 7rem;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url('/img/padernBACK_v3.png');
+    background-size: cover;
+    background-position: top;
+}
+
+/* General items */
+h1{
+    font-size: 4.2rem;
+    color: #292929;
+}
+
+p.comment{
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+    background-color: aliceblue;
+    border-radius: 36px;
+    transition: 0.3s;
+
+}
+
+.btn:hover {
+    box-shadow: 0 0 7px 3px rgb(0 0 0 / 0.3);
+}
+
+.btnRed {
+    background-color: crimson;
+    color: white;
+}
+
+.btnGlass {
+    background-color: rgb(220, 20, 60, 0.1);
+    color: crimson;
+}
+
+.btnGlass:hover {
+    color: white;
+    background-color: crimson;
+}
+
+
+
+
+
+
+
+
+/* General classes */
+.w-50{
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.ws-80 {
+    width: 80%;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.dflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dflexw {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.alitce {
+    align-items: center;
+}
+
+.diblock {
+    display: inline-block;
+}
+
+.jcbetween {
+    justify-content: space-between;
+}
+
+.jcaround {
+    justify-content: space-around;
+}
+
+.mb20{
+    margin-bottom: 1rem;
+}
+
+.mr5{
+    margin-right: 0.25rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
